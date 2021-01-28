@@ -128,35 +128,6 @@ function [I, info] = run_maxskatldr(X, C, snps, d, k, param)
     
 end
 
-% function [indicators] = run_maxskatldr(funcCalcR2, C, snp, d, k)
-%     Cx = C;
-%     IG = ones(size(C));
-% %     [~, sort_indices] = sort(C, 'descend');
-%     nSNP = length(C);
-%     indicators = zeros(nSNP, 1, 'logical');
-%     nSelected = 0;
-%     for iSortedSNP = 1:nSNP
-%         [~, iSNP] = max(Cx);
-%         Cx(iSNP) = -Inf;
-%         indicators(iSNP) = true;
-%         nSelected = nSelected + 1;
-%         if(nSelected >= k)
-%            break; 
-%         end
-%         pos = snp(iSNP, 2);
-%         hasSameChr = snp(iSNP, 1) == snp(:, 1);
-%         isClose = (snp(:, 2) <= (pos + d)) & (snp(:, 2) >= (pos - d));
-%         indices = hasSameChr & isClose & ~indicators;
-%         R2 = funcCalcR2(iSNP, indices)';
-% %         disp(['iSNP : ', num2str(iSNP), ', N1 : ', ...
-% %             num2str(find(indices,1)), ', R2 : ', num2str(R2(1))]);
-% %         pause();
-%         IG(indices) = IG(indices) .* (1 - R2);
-%         Cx(indices) = C(indices) .* IG(indices);
-%     end
-% end
-% 
-
 
 
 
