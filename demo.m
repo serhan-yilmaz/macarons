@@ -24,7 +24,7 @@ k    = 100;             % Number of Features to be selected
 D    = 2e4;             % Intra-chromosomal distance in base pairs
                         % to limit the search space of Macarons
           
-% The first output of SPADIS (I) is an m x 1 logical column vector.
+% The first output of Macarons (I) is an m x 1 logical column vector.
 % I contains the indicators for a subset of features
 % i.e. feature i is selected iff S[i] = true
 [I] = macarons(C, X, S, k, D);
