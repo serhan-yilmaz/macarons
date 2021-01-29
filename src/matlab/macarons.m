@@ -22,7 +22,7 @@ function [ indicators, info ] = macarons( C, X, snps, k, D, varargin)
     [~, sortIndices] = sort(-C, 'ascend');    
     param.SortIndices = sortIndices;
 
-    [indicators, info] = run_maxskatldr(X, C, snps, ...
+    [indicators, info] = run_macarons(X, C, snps, ...
         param.LDdistance, param.NumberOfFeatures, param);
 end
 
@@ -46,7 +46,7 @@ function [funcCalcR2, C_subset, snps_subset, indicators, Cact] = initializeActiv
     end
 end
 
-function [I, info] = run_maxskatldr(X, C, snps, d, k, param)
+function [I, info] = run_macarons(X, C, snps, d, k, param)
     timeStart = tic();
 
     nAll = size(X, 2);

@@ -19,7 +19,7 @@ S  = double(snp);
 % C : scores    - m x 1 column vector
 C = computeSKAT(X, Y, 'k', nPCs);
 
-%% Run Macarons for a given parameter pair
+%% Run Macarons with intra-chromosomal distance (D) parameter
 k    = 100;             % Number of Features to be selected
 D    = 2e4;             % Intra-chromosomal distance in base pairs
                         % to limit the search space of Macarons
@@ -29,5 +29,18 @@ D    = 2e4;             % Intra-chromosomal distance in base pairs
 % i.e. feature i is selected iff S[i] = true
 [I] = macarons(C, X, S, k, D);
 
+
+%% Run Macarons using a dependency network
+load('data/network.mat');
+
+% W : dependency network - n x n logical sparse matrix
+W = logical(W);
+% k : Number of Features to be selected
+k = 100;             
+          
+                        
+% Instead of using an intra-chromosomal distance, use a dependency network
+% to limit the search space for macarons:
+[I2] = macarons_network(C, X, W, k);
 
 

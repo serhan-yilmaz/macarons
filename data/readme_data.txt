@@ -12,3 +12,9 @@ data.mat
         phenotypes    - flowering time phenotypes - 1st column : phenotype_name, 2nd column : index in Atwell (2010) phenotypes
         snp           - SNP information matrix 173219 x 2 - 1st column : chromosome, 2nd column : position
         samples       - samples information matrix 199 x 2 - Contains 2 different unique index for each sample
+
+network.mat
+    Contains Genomic Membership (GM) SNP-SNP network
+        where the SNPs within the same gene are connected as a clique.
+                        
+        network       - a 173219 x 173219 binary sparse matrix.
