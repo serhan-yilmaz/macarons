@@ -18,6 +18,7 @@ We also provide a demo that visualizes the correlation structure between the sel
 demo_visualization.m
 ```
 Some examples:
+
 <img src="images/sample_01.png" width="370"> <img src="images/sample_02.png" width="370">
 
 ## License
