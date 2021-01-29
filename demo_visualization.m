@@ -1,4 +1,5 @@
 addpath(genpath([cd(), '/src/matlab/']));
+rng(1, 'twister'); % For reproducibility
 %% Prepare Data
 phenotypeIndex = 1;     % Index of the phenotype - 4W
 load('data/data.mat');
@@ -29,7 +30,8 @@ set(gcf, 'Position', [0 0 680 600]);
 movegui('center');
 set(gcf, 'Color', [1 1 1]);
 visualizevariants(C, X, S, I);
-suptitle('Baseline (D=0)');
+h = suptitle('Baseline (D=0)');
+h.Position(2) = h.Position(2) - 0.035;
 
 %% Visualize the results of Macarons for a moderate D parameter
 k    = 100;             % Number of Features to be selected
@@ -47,8 +49,8 @@ set(gcf, 'Position', [0 0 680 600]);
 movegui('center');
 set(gcf, 'Color', [1 1 1]);
 visualizevariants(C, X, S, I);
-suptitle('Macarons (D=20 kbp)');
-
+h = suptitle('Macarons (D=20 kbp)');
+h.Position(2) = h.Position(2) - 0.035;
 
 %% Visualize the results of Macarons for a high D parameter
 k    = 100;             % Number of Features to be selected
@@ -63,8 +65,8 @@ set(gcf, 'Position', [0 0 680 600]);
 movegui('center');
 set(gcf, 'Color', [1 1 1]);
 visualizevariants(C, X, S, I);
-suptitle('Macarons (D=1e6)');
-
+h = suptitle('Macarons (D=1e6)');
+h.Position(2) = h.Position(2) - 0.035;
 
 
 

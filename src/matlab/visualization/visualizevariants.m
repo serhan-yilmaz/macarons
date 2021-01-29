@@ -1,4 +1,4 @@
-function [ output_args ] = visualizevariants( C, X, S, I)
+function [] = visualizevariants( C, X, S, I)
     nSNP = nnz(I);
     Xs = X(:, I);
     R = corr(Xs).^2;
