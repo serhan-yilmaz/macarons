@@ -12,6 +12,13 @@ demo.m
 
 In the provided examples, the genotype and flowering time phenotypes data of Arabidopsis Thaliana (AT) obtained from [Atwell et. al. (2010)](https://www.ncbi.nlm.nih.gov/pubmed/20336072) are used. For descriptions and format of the data, check the [readme file for data](data/readme_data.txt).
 
+### Visualization of the selected variants
+We also provide a demo that visualizes the correlation structure between the selected variants:
+```
+demo_visualization.m
+```
+
+
 ## License
 This project is licensed under GNU GPL v3 - see the [LICENSE](LICENSE) file for details.
 
