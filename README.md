@@ -5,7 +5,7 @@ Macarons is an algorithm designed to recover single nucleotide polymorphisms (SN
 
 ## Getting Started:
 We provide a few examples on how to run Macarons on MATLAB. 
-Simply run the demo file:
+Simply run the demo file to obtain the selected variants:
 ```
 demo.m
 ```
