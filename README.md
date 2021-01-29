@@ -17,7 +17,9 @@ We also provide a demo that visualizes the correlation structure between the sel
 ```
 demo_visualization.m
 ```
+Some examples:
 
+<img src="images/sample_01.png" width="300"> <img src="images/sample_02.png" width="300">
 
 ## License
 This project is licensed under GNU GPL v3 - see the [LICENSE](LICENSE) file for details.
