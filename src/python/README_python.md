@@ -1,3 +1,3 @@
 # Macarons
 #### Running Macarons on Python
-TBD.
+This section is in construction. 
