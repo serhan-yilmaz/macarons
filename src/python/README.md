@@ -1,7 +1,7 @@
 # Macarons
 #### Macarons: a fast and simple algorithm to select complementary SNPs
 ## Requirements
-Running Macarons requires `numpy`, which is documented in the `requirements.txt` file. To install it, run
+Running Macarons requires `numpy`, which is documented in the [requirements.txt](requirements.txt) file. To install it, run
 ```
 pip install -r requirements.txt
 ```
