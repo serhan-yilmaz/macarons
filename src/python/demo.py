@@ -7,7 +7,7 @@ npzfile = np.load(r'../../data/data.npz')
 #   X : genotype  - n x m  matrix - n : Samples, m : Features (SNPs)
 X = npzfile['X']
 #   Y : phenotype - n x 1 column vector
-Y = npzfile['Y']
+Y = npzfile['Y']rm
 #   snp: positions and chromosomes of the SNPs - n x 2 matrix
 #   snp[:, 1] = chromosome indices
 #   snp[:, 2] = Position on the chromosome
